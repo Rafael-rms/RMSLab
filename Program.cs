@@ -33,6 +33,21 @@ while(exibirMenu)
 
         Console.WriteLine($"Paciente criado: {nome} e {documento}");
 
+        Console.WriteLine("Que exame deseja cadastrar: ");
+        string exame = Console.ReadLine();
+        Exame exame1 = new Exame();
+        exame1.Tipo = exame;
+        exame1.Status = StatusExame.Cadastrado;
+
+        Amostra amostra = new Amostra();
+        amostra.Codigo = "CSVAG";
+        amostra.Paciente = paciente;
+        amostra.Exame = exame1;
+        amostra.DataCadastro = DateTime.Today;
+
+        amostras.Add(amostra);
+        Console.WriteLine($"Temos {amostras.Count} amostras cadastrada.");
+
         break;
         case "2":
         Console.WriteLine("Triagem");
@@ -50,6 +65,7 @@ while(exibirMenu)
         Console.WriteLine("Opção inválida");
         break;
     }
+
     Console.WriteLine("Pressione uma tecla para continuar");
     Console.ReadLine();
 }
