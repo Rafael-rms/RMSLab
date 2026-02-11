@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RMSLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a73f46a3dc0ae190e7f088a1c841f7b35975128")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67f0fa73600643bb71c9d84c0943850de0094e89")]
 [assembly: System.Reflection.AssemblyProductAttribute("RMSLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RMSLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
