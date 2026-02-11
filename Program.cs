@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using LabMicrobiologia.Models;
+using RMSLab.Models;
 
 List<Amostra> amostras = new List<Amostra>();
 

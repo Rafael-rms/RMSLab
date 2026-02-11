@@ -1,0 +1,15 @@
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\RMSLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\RMSLab.AssemblyInfoInputs.cache
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\RMSLab.AssemblyInfo.cs
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\RMSLab.csproj.CoreCompileInputs.cache
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\RMSLab.sourcelink.json
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\bin\Debug\net10.0\RMSLab.exe
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\bin\Debug\net10.0\RMSLab.deps.json
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\bin\Debug\net10.0\RMSLab.runtimeconfig.json
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\bin\Debug\net10.0\RMSLab.dll
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\bin\Debug\net10.0\RMSLab.pdb
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\RMSLab.dll
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\refint\RMSLab.dll
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\RMSLab.pdb
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\RMSLab.genruntimeconfig.cache
+C:\Users\marqu\Desktop\ProjetoPessoal\Laboratorio\RMSLab\obj\Debug\net10.0\ref\RMSLab.dll
