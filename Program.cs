@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Reflection.Metadata;
 using RMSLab.Models;
 
 List<Amostra> amostras = new List<Amostra>();
@@ -15,7 +16,7 @@ while (exibirMenu)
     Console.WriteLine("Seja bem vindo ao seu laboratório de microbiologia");
     Console.WriteLine("Digite a opção desejada");
     Console.WriteLine("1 - Cadastro");
-    Console.WriteLine("2 - Triagem");
+    Console.WriteLine("2 - Recebimento de Amostras");
     Console.WriteLine("3 - Inserir resultado");
     Console.WriteLine("4 - Gerenciamento de lote");
     Console.WriteLine("5 - Sair");
@@ -55,20 +56,114 @@ while (exibirMenu)
             }
         case "2":
             {
-                Console.WriteLine("Triagem");
 
-                if (amostras.Count == 0)
+
+                bool exibirNovoMenu = true;
+                while (exibirNovoMenu)
                 {
-                    Console.WriteLine("Nenhuma amostra cadastrada");
-                }
-                else
-                {
-                    foreach (var amostra in amostras)
+                    Console.Clear();
+                    Console.WriteLine("Recebimento de Amostras");
+                    Console.WriteLine("1 - Consultar Amostra");
+                    Console.WriteLine("2 - Triagem");
+                    Console.WriteLine("3 - Voltar");
+
+                    switch (Console.ReadLine())
                     {
-                        Console.WriteLine($"Código: {amostra.Codigo}, Paciente: {amostra.Paciente.Nome}, Status: {amostra.Exame.Status}");
-                    }
-                }
+                        case "1":
+                            {
+                                Console.WriteLine("Consultar Amostra");
 
+
+                                Console.WriteLine($"Digite o código da amostra: ");
+                                string codigoAmostraDigitado = Console.ReadLine();
+
+                                Amostra amostraEncontrada = null;
+
+                                foreach (var amostra in amostras)
+                                {
+                                    if (amostra.Codigo == codigoAmostraDigitado)
+                                    {
+                                        amostraEncontrada = amostra;
+                                        break;
+                                    }
+                                }
+
+                                if (amostraEncontrada != null)
+                                    {
+                                        Console.WriteLine("Codigo encontrado com sucesso!!");
+
+                                        Console.WriteLine($"Codigo: {amostraEncontrada.Codigo}");
+                                        Console.WriteLine($"Paciente: {amostraEncontrada.Paciente.Nome}");
+                                        Console.WriteLine($"Exame: {amostraEncontrada.Exame.Tipo}");
+                                        Console.WriteLine($"Exame: {amostraEncontrada.Exame.Status}");
+                                        Console.WriteLine($"Data: {amostraEncontrada.DataCadastro}");
+
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Codigo não encontrado.");
+                                    }
+                                
+
+                                break;
+                            }
+                        case "2":
+                            {
+                                Console.WriteLine("Triagem");
+                                Console.WriteLine($"Digite o código da amostra: ");
+                                string codigoAmostraDigitado = Console.ReadLine();
+
+                                Amostra amostraEncontrada = null;
+                                foreach (var amostra in amostras)
+                                {
+                                    if (amostra.Codigo == codigoAmostraDigitado)
+                                    {
+                                        amostraEncontrada = amostra;
+                                        break;
+                                    }
+                                }
+
+                                if (amostraEncontrada != null)
+                                    {
+                                        Console.WriteLine("Codigo encontrado com sucesso!!");
+
+                                        Console.WriteLine($"Codigo: {amostraEncontrada.Codigo}");
+                                        Console.WriteLine($"Paciente: {amostraEncontrada.Paciente.Nome}");
+                                        Console.WriteLine($"Exame: {amostraEncontrada.Exame.Tipo}");
+                                        Console.WriteLine($"Exame: {amostraEncontrada.Exame.Status}");
+                                        Console.WriteLine($"Data: {amostraEncontrada.DataCadastro}");
+
+                                        if (amostraEncontrada.Exame.Status == StatusExame.Cadastrado)
+                                        {
+                                            amostraEncontrada.Exame.Status = StatusExame.PreTriado;
+                                            Console.WriteLine("Exame pre triado com sucesso!!");
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Amostra ja se encontra pré-traida.");
+                                        }
+
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Codigo não encontrado.");
+                                    }
+
+                                break;
+                            }
+                        case "3":
+                            {
+                                exibirNovoMenu = false;
+                                break;
+                            }
+                        default:
+                            Console.WriteLine("Opção inválida");
+                            break;
+                    }
+
+                    Console.WriteLine("Pressione uma tecla para continuar");
+                    Console.ReadLine();
+                }
                 break;
             }
         case "3":
